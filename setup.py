@@ -14,12 +14,14 @@ with open('LICENSE') as f:
 setup(
     name='flask_platform',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Part of assessment 2 for comp30670',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Martin Casey',
+    author_email='martin.casey@ucdconnect.ie',
+    url='https://github.com/MartinC20xx/flask_platform',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
-)
+    packages=find_packages(exclude=('tests', 'docs')),
+    entry_points={
+          "console_scripts":['comp30670_flask_platform=flask_platform.run:main']})
+#check this entry point once issue with run.py is resolved. 
 
