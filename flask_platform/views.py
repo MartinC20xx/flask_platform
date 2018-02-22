@@ -5,14 +5,12 @@ import platform
 
 @app.route('/')
 def index():
-    
-    
     returnDict = {}
     returnDict['user'] = 'Martin'
     returnDict['title'] = 'Home'
     returnDict['sysinfo'] = main.main()
    
-    return main.main()
+    return render_template("index.html", **returnDict) # look up context ** 
 
 
 
