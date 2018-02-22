@@ -11,6 +11,7 @@ with open('README.rst') as f:
 with open('LICENSE') as f:
     license = f.read()
 
+
 setup(
     name='flask_platform',
     version='0.1.0',
@@ -21,7 +22,11 @@ setup(
     url='https://github.com/MartinC20xx/flask_platform',
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
-    entry_points={
-          "console_scripts":['comp30670_flask_platform=flask_platform.run:main']})
-#check this entry point once issue with run.py is resolved. 
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=['Flask'],
+    
+    #entry_points={
+          #"console_scripts":['comp30670_flask_platform=flask_platform:app.py']})
 
+    )
