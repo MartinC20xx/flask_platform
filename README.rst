@@ -1,12 +1,19 @@
-Sample Module Repository
+flask_platform Repository
 ========================
 
-This simple project is an example repo for Python projects.
+This simple test project demonstrates the use of imported packages with a 
+basic 'hello world' flask application. 
+When the app is run, a method from the systeminfo package is imported and
+used to print a greeting and platform specifications to a simple 
+locally-hosted browser page.
 
-`Learn more <http://www.kennethreitz.org/essays/repository-structure-and-python>`_.
+The project is installable using pip, by typing the following into a 
+command line:
 
----------------
+	pip install git+https://github.com/MartinC20xx/flask_platform.git
 
-If you want to learn more about ``setup.py`` files, check out `this repository <https://github.com/kennethreitz/setup.py>`_.
+For instructions on how to run the app from the command line, consult 
+the following section of the Flask documentation:
 
-✨🍰✨
+	http://flask.pocoo.org/docs/0.12/cli/
+

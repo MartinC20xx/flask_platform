@@ -10,7 +10,7 @@ def index():
     returnDict['title'] = 'Home'
     returnDict['sysinfo'] = main.main()
    
-    return render_template("index.html", **returnDict) # look up context ** 
+    return render_template("index.html", **returnDict)  
 
 
 
